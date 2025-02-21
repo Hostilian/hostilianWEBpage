@@ -1,0 +1,616 @@
+/* style.css */
+
+/* Basic reset and general styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header and Navigation Styling */
+header {
+  background: #35424a; /* Dark header background */
+  color: white;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid; /* Orange border */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #e8491d; /* Orange hover effect */
+  border-radius: 5px;
+}
+
+/* Hero Section Styling (example - will be updated later) */
+#hero {
+  background: #e8491d; /* Example hero background color */
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+
+/* Footer Styling (example - will be updated later) */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* style.css */
+
+/* Basic reset and general styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e8491d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c53714;
+}
+
+/* Header and Navigation Styling */
+header {
+  background: #35424a;
+  color: white;
+  padding: 1em 0;
+  border-bottom: #e8491d 3px solid;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #e8491d;
+}
+
+/* Hero Section Styling */
+#hero {
+  background: #e8491d;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Featured Projects Styling */
+#projects {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #35424a;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.project-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-item h3 {
+  margin-top: 0;
+  color: #e8491d;
+}
+
+.project-item p {
+  color: #666;
+}
+
+/* About Me Section Styling */
+#about-me {
+  background: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#about-me h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #35424a;
+}
+
+/* Footer Styling */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+}
+
+/* style.css */
+
+/* Basic reset and general styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e8491d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c53714;
+}
+
+/* Header and Navigation Styling */
+header {
+  background: #35424a;
+  color: white;
+  padding: 1em 0;
+  border-bottom: #e8491d 3px solid;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #e8491d;
+}
+
+/* Hero Section Styling */
+#hero {
+  background: #e8491d;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Featured Projects Styling */
+#projects {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #35424a;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.project-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-item h3 {
+  margin-top: 0;
+  color: #e8491d;
+}
+
+.project-item p {
+  color: #666;
+}
+
+/* About Me Section Styling */
+#about-me {
+  background: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#about-me h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #35424a;
+}
+
+#about-page .about-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#about-page .about-content p {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.profile-image {
+  flex: 1;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+
+/* Footer Styling */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+}
+
+/* style.css */
+
+/* Basic reset and general styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e8491d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c53714;
+}
+
+/* Header and Navigation Styling */
+header {
+  background: #35424a;
+  color: white;
+  padding: 1em 0;
+  border-bottom: #e8491d 3px solid;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #e8491d;
+}
+
+/* Hero Section Styling */
+#hero {
+  background: #e8491d;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Featured Projects Styling */
+#projects {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #35424a;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.project-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-item h3 {
+  margin-top: 0;
+  color: #e8491d;
+}
+
+.project-item p {
+  color: #666;
+}
+
+/* About Me Section Styling */
+#about-me {
+  background: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#about-me h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #35424a;
+}
+
+#about-page .about-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#about-page .about-content p {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.profile-image {
+  flex: 1;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+
+/* Contact Form Styling */
+#contact-form {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#contact-form h1 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #35424a;
+}
+
+.contact-form {
+  width: 60%;
+  margin: auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #35424a;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+
+/* Footer Styling */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+}
