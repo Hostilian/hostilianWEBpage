@@ -614,3 +614,46 @@ footer {
   padding: 1em 0;
   margin-top: 40px;
 }
+
+/* website/style.css */
+
+/* ... previous CSS rules ... */
+
+/* API Integration Section Styling */
+#api-integration {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#api-integration h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #35424a;
+}
+
+#dog-breeds-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.breed-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.breed-card h3 {
+  margin-top: 0;
+  color: #e8491d;
+}
+
+.breed-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
