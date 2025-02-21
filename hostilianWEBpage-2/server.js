@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shrek Themed Quotes and Dogs</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Shrek's Swamp</div>
-            <ul>
-                <li><a href="#quotes">Kanye Quotes</a></li>
-                <li><a href="#dogs">Dog Breeds</a></li>
-            </ul>
-        </nav>
-    </header>
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const app = express();
 
-    <section id="quotes" class="container">
-        <h1>Kanye West Quotes</h1>
-        <div id="quote-container">
-            <p id="quote">Loading...</p>
-            <button id="new-quote" class="button">Get New Quote</button>
-        </div>
-    </section>
+// Enable CORS for all origins in development
+app.use(cors());
 
-    <section id="dogs" class="container">
-        <h1>Dog Breeds</h1>
-        <div id="dog-breeds-container"></div>
-    </section>
+// Serve static files
+app.use(express.static(path.join(__dirname, 'website')));
 
-    <footer>
-        <p>&copy; 2025 Shrek's Swamp. All rights reserved.</p>
-    </footer>
+// Proxy endpoint for dog registry API
+app.get('/api/dogs', async (req, res) => {
+    try {
+        const response = await fetch('https://registry.dog/api/v1/breeds/list');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        res.json(data);
+    } catch (error) {
+        console.error('API Error:', error);
+        res.status(500).json({ error: 'Failed to fetch dog breeds' });
+    }
+});
 
-    <script src="script.js"></script>
-    <script src="api-script.js"></script>
-</body>
-</html>
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`🧅 Shrek server running on http://localhost:${PORT}`);
+});

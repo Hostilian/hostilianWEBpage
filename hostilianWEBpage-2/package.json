@@ -1,9 +1,18 @@
-   shrek-themed-portfolio/
-   ├── index.html
-   ├── style.css
-   ├── script.js
-   ├── api-script.js
-   ├── images/
-   ├── package.json
-   ├── .gitignore
-   └── README.md
+{
+  "name": "shrek-themed-portfolio",
+  "version": "1.0.0",
+  "description": "A Shrek-themed portfolio website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
