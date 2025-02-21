@@ -1,0 +1,9 @@
+   shrek-themed-portfolio/
+   ├── index.html
+   ├── style.css
+   ├── script.js
+   ├── api-script.js
+   ├── images/
+   ├── package.json
+   ├── .gitignore
+   └── README.md

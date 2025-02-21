@@ -1,0 +1,10 @@
+   hostilian-shrek-project/
+   ├── index.html
+   ├── style.css
+   ├── script.js
+   ├── api-script.js
+   ├── images/
+   │   ├── shrek-background.jpg
+   │   ├── kanye-api-preview.jpg
+   │   └── dog-breeds-preview.jpg
+   └── README.md

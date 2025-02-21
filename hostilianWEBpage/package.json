@@ -1,0 +1,50 @@
+   <!-- filepath: /c:/Users/Hostilian/OneDrive/Documents/GitHub/hostilianWEBpage/website/kanye.html -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Kanye REST API - Hostilian Portfolio</title>
+       <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+       <header>
+           <nav>
+               <div class="logo">Hostilian Portfolio</div>
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="projects.html">Projects</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="kanye.html">Kanye REST API</a></li>
+               </ul>
+           </nav>
+       </header>
+
+       <main>
+           <section>
+               <h1>Kanye REST API</h1>
+               <p>A free REST API for random Kanye West quotes (Kanye as a Service).</p>
+               <h2>Usage</h2>
+               <pre>
+GET https://api.kanye.rest
+{
+  "quote": "I feel like I'm too busy writing history to read it."
+}
+               </pre>
+               <h2>Endpoints</h2>
+               <ul>
+                   <li><strong>GET /</strong> - Returns a random quote.</li>
+                   <li><strong>GET /text</strong> - Returns a simple text response.</li>
+                   <li><strong>GET /quotes</strong> - Returns an array of quotes.</li>
+               </ul>
+               <h2>Warning</h2>
+               <p>This response format may change.</p>
+           </section>
+       </main>
+
+       <footer>
+           <p>&copy; 2025 Hostilian Portfolio. All rights reserved.</p>
+       </footer>
+   </body>
+   </html>
