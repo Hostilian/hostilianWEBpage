@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrek Themed Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <header>
@@ -20,8 +22,8 @@
     </header>
 
     <section id="hero">
-        <h1>Welcome to Shrek's Swamp</h1>
-        <p>Get inspired by Kanye and explore dog breeds!</p>
+        <h1 style="color: black; font-family: 'Roboto', sans-serif;">Welcome to Shrek's Swamp</h1>
+        <p style="color: black; font-family: 'Roboto', sans-serif;">Get inspired by Kanye and explore dog breeds!</p>
         <a href="projects.html" class="button">View My Work</a>
     </section>
 
@@ -35,6 +37,11 @@
         <h2>Shrek Quotes</h2>
         <p id="shrek-quote">Loading...</p>
         <button id="new-shrek-quote-button" class="button">Get New Quote</button>
+    </section>
+
+    <section id="on-this-day" class="container">
+        <h2>On This Day</h2>
+        <div id="on-this-day-events"></div>
     </section>
 
     <section id="projects" class="container">
@@ -66,7 +73,13 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Shrek's Swamp. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Shrek's Swamp. All rights reserved.</p>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/in/eren-ozturk-66b262225/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/hostiliann/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="api-script.js"></script>
