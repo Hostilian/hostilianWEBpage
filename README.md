@@ -13,6 +13,7 @@
 │   ├── api.html
 │   ├── about.html
 │   ├── contact.html
+│   ├── gallery.html
 │   ├── style.css
 │   ├── api-script.js
 │   └── script.js
@@ -146,6 +147,46 @@
 </html>
 ```
 
+#### gallery.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Shrek's Swamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Shrek's Swamp</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Image Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/shrek-background.jpg" alt="Shrek Background">
+            <img src="images/dog-breeds-preview.jpg" alt="Dog Breeds Preview">
+            <img src="images/kanye-api-preview.jpg" alt="Kanye API Preview">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shrek's Swamp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+```
+
 ### 2. **CSS File (style.css)**
 ```css
 body {
@@ -216,6 +257,19 @@ footer {
     text-align: center;
     padding: 2rem 0;
 }
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 ```
 
 ### 3. **JavaScript File (api-script.js)**
@@ -259,6 +313,7 @@ Welcome to the Shrek Themed Portfolio project! This project showcases various we
 - **index.html**: Main entry point of the website.
 - **projects.html**: Lists various projects.
 - **api.html**: Integrates the Kanye REST API and Dog Breeds API.
+- **gallery.html**: Displays a gallery of images.
 - **style.css**: Contains the CSS styles for the website.
 - **api-script.js**: JavaScript file for fetching data from APIs.
 
@@ -267,6 +322,7 @@ Welcome to the Shrek Themed Portfolio project! This project showcases various we
 - **Kanye REST API Integration**: Fetches random quotes from Kanye West.
 - **Dog Breeds API Integration**: Displays random dog breed images.
 - **Shrek Theme**: Themed design inspired by Shrek.
+- **Image Gallery**: Displays a gallery of images related to the projects.
 
 ## Setup Instructions
 
@@ -284,3 +340,5 @@ This project is open-source and available under the MIT License.
 
 ### Conclusion
 This project combines a fun Shrek theme with the functionality of the Kanye West quotes API and the Dog Breeds API. You can further enhance it by adding more features, improving the design, or integrating additional APIs.
+
+

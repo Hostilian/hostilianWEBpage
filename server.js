@@ -26,7 +26,7 @@ app.get('/api/dogs', async (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
     console.log(`🧅 Shrek server running on http://localhost:${PORT}`);
 });
