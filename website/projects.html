@@ -15,16 +15,35 @@ shrek-themed-portfolio/
 │
 └── README.md
 ```
-<!-- ...existing code... -->
 <section id="shrek-quotes" class="container">
     <h2>Shrek Quotes</h2>
+    <button id="new-shrek-quote-button" class="button">Get New Quote</button>
+    <p id="shrek-quote">Loading...</p>
+</section>
 
+<section id="ron-quotes" class="container">
+    <h2>Ron Swanson Quotes</h2>
+    <button id="new-ron-quote-button" class="button">Get New Quote</button>
+    <p id="ron-quote">Loading...</p>
+</section>
 
+<section id="kanye-quotes" class="container">
+    <h2>Kanye West Quotes</h2>
+    <button id="new-kanye-quote-button" class="button">Get New Quote</button>
+    <p id="kanye-quote">Loading...</p>
+</section>
 
+<section id="memes" class="container">
+    <h2>Memes</h2>
+    <button id="new-meme-button" class="button">Get New Meme</button>
+    <div id="meme">Loading...</div>
+</section>
 
-
-
-<script src="script.js"></script><!-- ...existing code... --></section>    <button id="new-shrek-quote-button" class="button">Get New Quote</button>    <p id="shrek-quote">Loading...</p>
+<section id="wallpapers" class="container">
+    <h2>Wallpapers</h2>
+    <button id="new-wallpaper-button" class="button">Get New Wallpaper</button>
+    <div id="wallpaper">Loading...</div>
+</section>
 
 <section id="on-this-day" class="container">
     <h2>On This Day</h2>
@@ -32,19 +51,17 @@ shrek-themed-portfolio/
         <label for="month">Month:</label>
         <input type="number" id="month" name="month" min="1" max="12" required>
         <label for="day">Day:</label>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ...existing code... --></script>});    fetchOnThisDay(month, day);    const day = document.getElementById('day').value;    const month = document.getElementById('month').value;    event.preventDefault();document.getElementById('on-this-day-form').addEventListener('submit', function(event) {<script></section>    <div id="on-this-day-events"></div>    </form>        <button type="submit" class="button">Get Events</button>        <input type="number" id="day" name="day" min="1" max="31" required>
+        <input type="number" id="day" name="day" min="1" max="31" required>
+        <button type="submit" class="button">Get Events</button>
+    </form>
+    <div id="on-this-day-events"></div>
+</section>
+<script src="script.js"></script>
+<script>
+document.getElementById('on-this-day-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const month = document.getElementById('month').value;
+    const day = document.getElementById('day').value;
+    fetchOnThisDay(month, day);
+});
+</script>

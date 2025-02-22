@@ -1,24 +1,21 @@
 body {
     font-family: 'Roboto', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: bold;
+    color: #333;
     margin-left: 20px;
 }
 
@@ -27,18 +24,17 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
+    justify-content: space-around;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin: 0 10px;
 }
 
 header nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    color: #333;
+    font-weight: bold;
 }
 
 header nav ul li a:hover {
@@ -55,14 +51,10 @@ nav {
 }
 
 #hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    color: #fff;
+    padding: 100px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
 }
 
 #hero h1 {
@@ -72,84 +64,84 @@ nav {
 
 #hero p {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #hero .button {
-    background-color: #007bff;
-    color: #fff;
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
 }
 
 #hero .button:hover {
-    background-color: #0056b3;
+    background-color: #555;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 20px;
 }
 
 .projects-grid {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 20px;
 }
 
 .project-item {
-    background: white;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
 }
 
 .project-item img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .button {
-    background: #e8491d; /* Accent color */
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
     display: inline-block;
-    margin-top: 1rem;
-    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .button:hover {
-    background: #d7381c;
+    background-color: #555;
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
 }
 
 footer .footer-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-content p {
+    margin: 0;
 }
 
 footer .socials {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0 0;
     display: flex;
 }
 
@@ -159,11 +151,8 @@ footer .socials li {
 
 footer .socials li a {
     color: #fff;
-    font-size: 18px;
-}
-
-footer .socials li a:hover {
-    color: #007bff;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 form {
