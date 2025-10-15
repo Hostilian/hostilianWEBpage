@@ -1,67 +1,70 @@
-shrek-themed-portfolio/
-│
-├── images/
-│   ├── shrek.png
-│   ├── dog-breeds.png
-│   └── kanye.png
-│
-├── website/
-│   ├── index.html
-│   ├── api.html
-│   ├── style.css
-│   ├── api-script.js
-│   ├── script.js
-│   └── projects.html
-│
-└── README.md
-```
-<section id="shrek-quotes" class="container">
-    <h2>Shrek Quotes</h2>
-    <button id="new-shrek-quote-button" class="button">Get New Quote</button>
-    <p id="shrek-quote">Loading...</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Shrek's Swamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Shrek's Swamp</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="ron-quotes" class="container">
-    <h2>Ron Swanson Quotes</h2>
-    <button id="new-ron-quote-button" class="button">Get New Quote</button>
-    <p id="ron-quote">Loading...</p>
-</section>
+    <section id="shrek-quotes" class="container">
+        <h2>Shrek Quotes</h2>
+        <button id="new-shrek-quote-button" class="button">Get New Quote</button>
+        <p id="shrek-quote">Loading...</p>
+    </section>
 
-<section id="kanye-quotes" class="container">
-    <h2>Kanye West Quotes</h2>
-    <button id="new-kanye-quote-button" class="button">Get New Quote</button>
-    <p id="kanye-quote">Loading...</p>
-</section>
+    <section id="ron-quotes" class="container">
+        <h2>Ron Swanson Quotes</h2>
+        <button id="new-ron-quote-button" class="button">Get New Quote</button>
+        <p id="ron-quote">Loading...</p>
+    </section>
 
-<section id="memes" class="container">
-    <h2>Memes</h2>
-    <button id="new-meme-button" class="button">Get New Meme</button>
-    <div id="meme">Loading...</div>
-</section>
+    <section id="kanye-quotes" class="container">
+        <h2>Kanye West Quotes</h2>
+        <button id="new-kanye-quote-button" class="button">Get New Quote</button>
+        <p id="kanye-quote">Loading...</p>
+    </section>
 
-<section id="wallpapers" class="container">
-    <h2>Wallpapers</h2>
-    <button id="new-wallpaper-button" class="button">Get New Wallpaper</button>
-    <div id="wallpaper">Loading...</div>
-</section>
+    <section id="memes" class="container">
+        <h2>Memes</h2>
+        <button id="new-meme-button" class="button">Get New Meme</button>
+        <div id="meme">Loading...</div>
+    </section>
 
-<section id="on-this-day" class="container">
-    <h2>On This Day</h2>
-    <form id="on-this-day-form">
-        <label for="month">Month:</label>
-        <input type="number" id="month" name="month" min="1" max="12" required>
-        <label for="day">Day:</label>
-        <input type="number" id="day" name="day" min="1" max="31" required>
-        <button type="submit" class="button">Get Events</button>
-    </form>
-    <div id="on-this-day-events"></div>
-</section>
-<script src="script.js"></script>
-<script>
-document.getElementById('on-this-day-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const month = document.getElementById('month').value;
-    const day = document.getElementById('day').value;
-    fetchOnThisDay(month, day);
-});
-</script>
+    <section id="wallpapers" class="container">
+        <h2>Wallpapers</h2>
+        <button id="new-wallpaper-button" class="button">Get New Wallpaper</button>
+        <div id="wallpaper">Loading...</div>
+    </section>
+
+    <section id="on-this-day" class="container">
+        <h2>On This Day</h2>
+        <form id="on-this-day-form">
+            <label for="month">Month:</label>
+            <input type="number" id="month" name="month" min="1" max="12" required>
+            <label for="day">Day:</label>
+            <input type="number" id="day" name="day" min="1" max="31" required>
+            <button type="submit" class="button">Get Events</button>
+        </form>
+        <div id="on-this-day-events"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shrek's Swamp. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
